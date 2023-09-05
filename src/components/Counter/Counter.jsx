@@ -3,7 +3,10 @@ const Counter = () => {
     // const handleClick = (evt) => (
     //     console.log('evt', evt)
     // )
-    const handleClick = () => {}
+    const handleClick = () => {
+        counter++;
+        console.log('counter', counter)
+    }
 	return (
 		<div className='position-absolute top-50 start-50 translate-middle'>
 			<div
