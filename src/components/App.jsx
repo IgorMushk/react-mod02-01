@@ -3,20 +3,23 @@ import { Container } from './App.styled';
 import Counter from './Counter/Counter';
 import Header from './Header/Header';
 import Modal from './Modal/Modal';
+import TodoList from './TodoList';
 
 class App extends Component {
-  state = {isShowModal: false};
+  state = { isShowModal: false };
   toggleModal = () => {
-    this.setState((prev)=>({isShowModal:!prev.isShowModal})) 
-  }
+    this.setState(prev => ({ isShowModal: !prev.isShowModal }));
+  };
   render() {
     return (
       <>
         <Container>React homework template!</Container>
         <Header toggleModal={this.toggleModal} />
         <Counter />
-        {this.state.isShowModal && <Modal
-        toggleModal={this.toggleModal}>Text for Modal</Modal>}
+        {this.state.isShowModal && (
+          <Modal toggleModal={this.toggleModal}>Text for Modal</Modal>
+        )}
+        <TodoList />
       </>
     );
   }
