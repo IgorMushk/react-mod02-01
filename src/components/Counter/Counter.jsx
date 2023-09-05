@@ -1,3 +1,4 @@
+let counter = 0
 const Counter = () => {
 	return (
 		<div className='position-absolute top-50 start-50 translate-middle'>
@@ -11,10 +12,10 @@ const Counter = () => {
 						className='card-text  text-center'
 						style={{ fontSize: '80px' }}
 					>
-					0
+					{counter}
                     </p>
 					<div className='d-flex justify-content-center px-5'>
-						<button
+						<button onClick={handlClick}
 							className='btn btn-outline-success me-5'
 						>
 							<i className='bi bi-plus-circle fs-1'></i>
@@ -30,3 +31,14 @@ const Counter = () => {
 }
 
 export default Counter
+
+// 1 - вариант
+//document.addEventListener('')
+
+// 2 вариант - взял React
+//const div = document.createElement('div');
+//div.onClick();
+//div.addEventListener('click', callBack)
+//div.addEventListener('click', ()=>{})
+//div.addEventListener('click', handleClick(params));
+//function handleClick(ent){}
