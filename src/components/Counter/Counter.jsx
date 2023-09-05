@@ -10,15 +10,23 @@ class Counter extends Component{
     handleClick = () => {
            // console.log('this.state', this.state)
            //this.state.counter++
-           this.setState({
-            counter: 10,
-            items: [123,123],
-           })
-           console.log('state :', this.state);
-    }
+
+        //    this.setState({
+        //     counter: 10,
+        //     items: [123,123],
+        //    })
+
+        // this.setState((prevState)=>{
+        //     //console.log('prevState', prevState);
+        //     return {counter:prevState.counter+1}
+        // })
+        //console.log('state :', this.state);
+
+        this.setState((prevState)=> ({counter:prevState.counter+1}))
+    } 
 
     render() {
-        console.log('state 2:', this.state);
+        //console.log('state 2:', this.state);
         return <div className='position-absolute top-50 start-50 translate-middle'>
         <div
             className='card bg-dark text-white '
