@@ -6,9 +6,9 @@ import Modal from "./Modal/Modal";
 export const App = () => {
   return (
     <>
-    {/* <Container>
+    <Container>
       React homework template!
-    </Container> */}
+    </Container>
     <Header />
     <Counter/>
     <Modal>Modal</Modal>
