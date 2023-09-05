@@ -11,7 +11,8 @@ const Counter = () => {
 						className='card-text  text-center'
 						style={{ fontSize: '80px' }}
 					>
-					</p>
+					0
+                    </p>
 					<div className='d-flex justify-content-center px-5'>
 						<button
 							className='btn btn-outline-success me-5'
