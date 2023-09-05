@@ -5,14 +5,18 @@ import Header from './Header/Header';
 import Modal from './Modal/Modal';
 
 class App extends Component {
-  state = {};
+  state = {isShowModal: false};
+  toggleModal = () => {
+    this.setState((prev)=>({isShowModal:!prev.isShowModal})) 
+  }
   render() {
     return (
       <>
         <Container>React homework template!</Container>
-        <Header />
+        <Header toggleModal={this.toggleModal} />
         <Counter />
-        <Modal>Text for Modal</Modal>
+        {this.state.isShowModal && <Modal
+        toggleModal={this.toggleModal}>Text for Modal</Modal>}
       </>
     );
   }
