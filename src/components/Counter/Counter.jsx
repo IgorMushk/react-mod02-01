@@ -1,8 +1,8 @@
-let counter = 0
 const Counter = () => {
     // const handleClick = (evt) => (
     //     console.log('evt', evt)
     // )
+    let counter = 0
     const handleClick = () => {
         counter++;
         console.log('counter', counter)
