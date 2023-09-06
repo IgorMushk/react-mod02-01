@@ -4,6 +4,7 @@ import Counter from './Counter/Counter';
 import Header from './Header/Header';
 import Modal from './Modal/Modal';
 import TodoList from './TodoList';
+import ToDoListV1 from './ToDoListV1/ToDoList';
 
 class App extends Component {
   state = { isShowModal: false };
@@ -33,6 +34,7 @@ class App extends Component {
 					<Modal closeModal={this.closeModal}>Some</Modal>
 				)} */}
         <TodoList />
+        <ToDoListV1 />
       </>
     );
   }
