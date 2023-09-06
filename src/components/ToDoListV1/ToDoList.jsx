@@ -9,16 +9,14 @@ class ToDoListV1 extends Component {
 	}
 
 	handleCheckCompleted = (id) => {
-		this.setState((prevState)=>{
-			return {
+		this.setState((prevState)=>({
 				todoList: prevState.todoList.map(todo => todo.id ===id
 					? {...todo,completed: !todo.completed}
 					: todo
 					),
-			}
-		})
+		}))
 	}
-	
+
 	render() {
 		return (
 			<>
@@ -38,6 +36,28 @@ class ToDoListV1 extends Component {
 }
 
 export default ToDoListV1
+
+// remove  - return{}
+// handleCheckCompleted = (id) => {
+// 	this.setState((prevState)=>{
+// 		return {
+// 			todoList: prevState.todoList.map(todo => todo.id ===id
+// 				? {...todo,completed: !todo.completed}
+// 				: todo
+// 				),
+// 		}
+// 	})
+// }
+// ================================================================
+// remove  - return{}
+// handleCheckCompleted = (id) => {
+// 	this.setState((prevState)=>({
+// 			todoList: prevState.todoList.map(todo => todo.id ===id
+// 				? {...todo,completed: !todo.completed}
+// 				: todo
+// 				),
+// 	}))
+// }
 
 // - ok - work
 // class ToDoListV1 extends Component {
