@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/react-mod02-01/static/css/main.b5320759.css",
-    "main.js": "/react-mod02-01/static/js/main.4fb9b097.js",
+    "main.js": "/react-mod02-01/static/js/main.cf3883e1.js",
     "index.html": "/react-mod02-01/index.html",
     "main.b5320759.css.map": "/react-mod02-01/static/css/main.b5320759.css.map",
-    "main.4fb9b097.js.map": "/react-mod02-01/static/js/main.4fb9b097.js.map"
+    "main.cf3883e1.js.map": "/react-mod02-01/static/js/main.cf3883e1.js.map"
   },
   "entrypoints": [
     "static/css/main.b5320759.css",
-    "static/js/main.4fb9b097.js"
+    "static/js/main.cf3883e1.js"
   ]
 }
