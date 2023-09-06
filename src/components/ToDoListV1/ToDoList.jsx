@@ -17,6 +17,14 @@ class ToDoListV1 extends Component {
 		}))
 	}
 
+	handleDelete = (id) => {
+		this.setState((prevState)=>{
+			return {
+				todoList: prevState.todoList.filter(todo=>todo.id!==id),
+			}
+		})
+	}
+
 	render() {
 		return (
 			<>
@@ -27,6 +35,7 @@ class ToDoListV1 extends Component {
 							key={todo.id}
 							todo={todo}
 							handleCheckCompleted = {this.handleCheckCompleted}
+							handleDelete = {this.handleDelete}
 						/>
 					))}
 				</ul>

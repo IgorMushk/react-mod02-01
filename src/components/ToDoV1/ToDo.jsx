@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ToDoV1 = ({ todo, handleCheckCompleted }) => {
+const ToDoV1 = ({ todo, handleCheckCompleted, handleDelete }) => {
   return (
     <li className="list-group-item">
       <div className="row justify-content-between">
@@ -18,6 +18,7 @@ const ToDoV1 = ({ todo, handleCheckCompleted }) => {
             type="button"
             className="btn-close"
             aria-label="Close"
+			onClick={()=>handleDelete(todo.id)}
           ></button>
         </div>
       </div>
