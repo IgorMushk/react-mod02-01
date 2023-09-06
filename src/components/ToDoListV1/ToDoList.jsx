@@ -18,11 +18,9 @@ class ToDoListV1 extends Component {
 	}
 
 	handleDelete = (id) => {
-		this.setState((prevState)=>{
-			return {
+		this.setState((prevState)=>({
 				todoList: prevState.todoList.filter(todo=>todo.id!==id),
-			}
-		})
+		}))
 	}
 
 	render() {
@@ -45,6 +43,21 @@ class ToDoListV1 extends Component {
 }
 
 export default ToDoListV1
+
+// remove  - return{}
+// handleDelete = (id) => {
+// 	this.setState((prevState)=>{
+// 		return {
+// 			todoList: prevState.todoList.filter(todo=>todo.id!==id),
+// 		}
+// 	})
+// }
+// =================================================================
+// handleDelete = (id) => {
+// 	this.setState((prevState)=>({
+// 			todoList: prevState.todoList.filter(todo=>todo.id!==id),
+// 	}))
+// }
 
 // remove  - return{}
 // handleCheckCompleted = (id) => {
