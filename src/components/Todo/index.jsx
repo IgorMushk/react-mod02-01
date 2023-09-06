@@ -16,11 +16,12 @@ export default Todo
 
 // // rafce
 // //import React from 'react'
-
+// - Ok
 // const Todo = ({todo, handleDelete}) => {
 //   return ( 
 //   <li className="list-group-item">
-//     <div>{todo.title}</div>
+//     {/* <div>{todo.title}</div> */}
+//     {todo.title}
 //     <button
 // 				type='button'
 // 				className='btn-close'
