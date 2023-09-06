@@ -28,11 +28,12 @@ class TodoList extends Component {
 
 export default TodoList
 
+// - Ok
 // class TodoList extends Component {
 //   state = { todo }
 //   handleDelete = (id) => {
-//      this.setState((prev) =({
-//       todo: prev.filter(el=>el.id !== id)
+//      this.setState((prev) =>({
+//       todo: prev.todo.filter(el=>el.id !== id)
 //      }))
 //   }
 //   render() {
@@ -45,7 +46,7 @@ export default TodoList
 //     )
 //   }
 // }
-
+//
 // export default TodoList
 
 // const TodoList = () => {
