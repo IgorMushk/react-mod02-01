@@ -1,18 +1,34 @@
 import React, { Component } from 'react'
 import ToDoV1 from '../ToDoV1/ToDo'
-import todoList from '../todo.json'
+import todo from '../todo.json'
 
 
 class ToDoListV1 extends Component {
+	state ={
+		todoList: todo,
+	}
+
+	handleCheckCompleted = (id) => {
+		this.setState((prevState)=>{
+			return {
+				todoList: prevState.todoList.map(todo => todo.id ===id
+					? {...todo,completed: !todo.completed}
+					: todo
+					),
+			}
+		})
+	}
+	
 	render() {
 		return (
 			<>
 				<h1>My To-Do list</h1>
 				<ul className='list-group list-group-flush'>
-					{todoList.map((todo) => (
+					{this.state.todoList.map((todo) => (
 						<ToDoV1
 							key={todo.id}
 							todo={todo}
+							handleCheckCompleted = {this.handleCheckCompleted}
 						/>
 					))}
 				</ul>
